@@ -2,6 +2,7 @@
   import HelloWorld from './components/HelloWorld.vue';
   import { onMounted } from 'vue';
   import { test } from '@block/utils';
+  import { Name } from '@block/components';
 
   onMounted(() => {
     test();
@@ -17,7 +18,8 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+
+  <Name />
 </template>
 
 <style scoped>
