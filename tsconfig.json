@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noLib": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "strictFunctionTypes": false,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "esnext"],
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "types": ["vite/client", "types/**/*"],
+    "removeComments": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "types/*": ["./types/*"],
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  },
+  "include": [
+    "apps/tests/**/*.ts",
+    "apps/src/**/*.ts",
+    "apps/src/**/*.d.ts",
+    "apps/src/**/*.tsx",
+    "apps/src/**/*.vue",
+    "apps/types/**/*.d.ts",
+    "apps/types/**/*.ts",
+    "apps/build/**/*.ts",
+    "apps/build/**/*.d.ts",
+    "apps/mock/**/*.ts",
+    "apps/vite.config.ts",
+    "apps/src/utils/validate.js",
+    "apps/configs/utils.ts"
+  ],
+  "exclude": ["node_modules", "apps/tests/server/**/*.ts", "apps/configs/dist", "apps/**/*.js"]
+}

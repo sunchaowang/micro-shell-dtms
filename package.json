@@ -1,10 +1,15 @@
 {
+  "private": true,
   "name": "micro-monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx -y only-allow pnpm",
+    "bootstrap": "pnpm install",
+    "dev:all": "pnpm --parallel run --filter 'apps-*' dev",
+    "build:all": "pnpm --parallel run --filter 'apps-*' build",
+    "build:car": "pnpm run --filter 'apps-car' build",
+    "build:coal": "pnpm run --filter 'apps-coal' build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,10 +17,18 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.4",
+    "typescript": "^5.3.3",
     "vite": "^5.0.7",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.19.2",
+    "prettier": "^3.1.1",
     "vue": "^3.3.11"
   }
 }

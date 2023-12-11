@@ -1,5 +1,5 @@
 {
-  "name": "applications-car",
+  "name": "apps-coal",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@block/utils": "workspace:*",
     "vue": "^3.3.8"
   },
   "devDependencies": {
