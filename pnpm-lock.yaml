@@ -62,8 +62,8 @@ importers:
   apps/coal:
     dependencies:
       '@block/components':
-        specifier: workspace:../../packages/components
-        version: link:../../packages/components
+        specifier: workspace:../../packages/components@1.0.0
+        version: link:../../packages/components@1.0.0
       '@block/utils':
         specifier: workspace:*
         version: link:../../packages/utils
