@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@block/utils": "workspace:*",
-    "@block/components": "workspace:*@1.0.0",
+    "@block/components": "workspace:*",
     "vue": "^3.3.8"
   },
   "devDependencies": {
