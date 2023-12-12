@@ -61,16 +61,34 @@ importers:
 
   apps/coal:
     dependencies:
-      '@block/components':
-        specifier: workspace:@block/components@1.0.2
-        version: link:../../packages/components
-      '@block/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       vue:
         specifier: ^3.3.8
         version: 3.3.11(typescript@5.3.3)
     devDependencies:
+      '@block/apis':
+        specifier: workspace:*
+        version: link:../../packages/apis
+      '@block/components':
+        specifier: workspace:*
+        version: link:../../packages/components
+      '@block/enums':
+        specifier: workspace:*
+        version: link:../../packages/enums
+      '@block/hooks':
+        specifier: workspace:*
+        version: link:../../packages/hooks
+      '@block/routes':
+        specifier: workspace:*
+        version: link:../../packages/routes
+      '@block/stores':
+        specifier: workspace:*
+        version: link:../../packages/stores
+      '@block/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
+      '@block/views':
+        specifier: workspace:*
+        version: link:../../packages/views
       '@vitejs/plugin-vue':
         specifier: ^4.5.0
         version: 4.5.2(vite@5.0.7)(vue@3.3.11)
@@ -78,11 +96,21 @@ importers:
         specifier: ^5.0.0
         version: 5.0.7(@types/node@20.10.4)
 
+  packages/apis: {}
+
   packages/components: {}
+
+  packages/enums: {}
 
   packages/hooks: {}
 
+  packages/routes: {}
+
+  packages/stores: {}
+
   packages/utils: {}
+
+  packages/views: {}
 
 packages:
 

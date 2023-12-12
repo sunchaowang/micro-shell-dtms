@@ -1,5 +1,3 @@
-import Name from './Name.vue'
+import Name from './Name.vue';
 
-export {
-  Name
-}
+export { Name };
