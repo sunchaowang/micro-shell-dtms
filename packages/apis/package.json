@@ -1,5 +1,5 @@
 {
-  "name": "@block/apis",
+  "name": "@packages/apis",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

@@ -65,28 +65,28 @@ importers:
         specifier: ^3.3.8
         version: 3.3.11(typescript@5.3.3)
     devDependencies:
-      '@block/apis':
+      '@packages/apis':
         specifier: workspace:*
         version: link:../../packages/apis
-      '@block/components':
+      '@packages/components':
         specifier: workspace:*
         version: link:../../packages/components
-      '@block/enums':
+      '@packages/enums':
         specifier: workspace:*
         version: link:../../packages/enums
-      '@block/hooks':
+      '@packages/hooks':
         specifier: workspace:*
         version: link:../../packages/hooks
-      '@block/routes':
+      '@packages/routes':
         specifier: workspace:*
         version: link:../../packages/routes
-      '@block/stores':
+      '@packages/stores':
         specifier: workspace:*
         version: link:../../packages/stores
-      '@block/utils':
+      '@packages/utils':
         specifier: workspace:*
         version: link:../../packages/utils
-      '@block/views':
+      '@packages/views':
         specifier: workspace:*
         version: link:../../packages/views
       '@vitejs/plugin-vue':

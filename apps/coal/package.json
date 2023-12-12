@@ -12,14 +12,14 @@
     "vue": "^3.3.8"
   },
   "devDependencies": {
-    "@block/apis": "workspace:*",
-    "@block/components": "workspace:*",
-    "@block/enums": "workspace:*",
-    "@block/hooks": "workspace:*",
-    "@block/routes": "workspace:*",
-    "@block/stores": "workspace:*",
-    "@block/utils": "workspace:*",
-    "@block/views": "workspace:*",
+    "@packages/apis": "workspace:*",
+    "@packages/components": "workspace:*",
+    "@packages/enums": "workspace:*",
+    "@packages/hooks": "workspace:*",
+    "@packages/routes": "workspace:*",
+    "@packages/stores": "workspace:*",
+    "@packages/utils": "workspace:*",
+    "@packages/views": "workspace:*",
     "@vitejs/plugin-vue": "^4.5.0",
     "vite": "^5.0.0"
   }

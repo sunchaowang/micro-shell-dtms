@@ -1,8 +1,8 @@
 <script setup>
   import { onMounted } from 'vue';
-  import { test } from '@block/utils';
-  import { Name } from '@block/components';
-  import ContractManagements from '@block/views/contract-managements/index.vue';
+  import { test } from '@packages/utils';
+  import { Name } from '@packages/components';
+  import ContractManagements from '@packages/views/contract-managements/index.vue';
 
   onMounted(() => {
     test();
