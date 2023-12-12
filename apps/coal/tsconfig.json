@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@block/*": ["../packages/*"],
+    },
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
