@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "pnpm install",
-    "dev:all": "pnpm --parallel run --filter 'apps-*' dev",
-    "build:all": "pnpm --parallel run --filter 'apps-*' build",
-    "build:car": "pnpm run --filter 'apps-car' build",
-    "build:coal": "pnpm run --filter 'apps-coal' build",
+    "dev:all": "pnpm --parallel run --filter=./apps/** dev",
+    "build:all": "pnpm --parallel run --filter=./apps/** build",
+    "build:car": "pnpm run --filter=./apps/car build",
+    "build:coal": "pnpm run --filter=./apps/coal build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
