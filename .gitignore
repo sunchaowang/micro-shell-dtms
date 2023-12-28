@@ -2,3 +2,14 @@
 .idea
 node_modules
 .vscode
+pnpm-lock.yaml
+.DS_Store
+.env.*.local
+.env.*.production.local
+
+**/*/dist
+build
+**/*/out
+
+# 忽略所有 .env*.local 文件
+.env*.local
