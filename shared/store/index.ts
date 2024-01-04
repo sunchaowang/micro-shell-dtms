@@ -1,6 +1,5 @@
 import { createPinia } from 'pinia';
-const _createPinia = createPinia;
 
-export const store = _createPinia();
+export const store = createPinia();
 
-export default _createPinia;
+export default createPinia;
