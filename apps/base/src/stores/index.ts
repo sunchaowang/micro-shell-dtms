@@ -1,1 +1,1 @@
-export { store } from '@packages/store';
+export { store } from '@shared/store';

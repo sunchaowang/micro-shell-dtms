@@ -1,9 +1,9 @@
 <script setup>
   import { onMounted } from 'vue';
-  import { test } from '@packages/utils';
-  import { Name } from '@packages/components';
-  import ContractManagements from '@packages/views/contract-managements/index.vue';
-  import { useAppStore as usePackageAppStore } from '@packages/store/modules/app'; // workspace/packages/store/modules/app.ts
+  import { test } from '@shared/utils';
+  import { Name } from '@shared/components';
+  import ContractManagements from '@shared/views/contract-managements/index.vue';
+  import { useAppStore as usePackageAppStore } from '@shared/store/modules/app'; // workspace/packages/store/modules/app.ts
   import { useAppStore as useLocalAppStore } from './stores/modules/app'; // app/src/store/modules/app.ts
 
   const packageAppStore = usePackageAppStore();

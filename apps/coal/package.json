@@ -11,14 +11,14 @@
   "dependencies": {
   },
   "devDependencies": {
-    "@packages/apis": "workspace:*",
-    "@packages/components": "workspace:*",
-    "@packages/enums": "workspace:*",
-    "@packages/hooks": "workspace:*",
-    "@packages/router": "workspace:*",
-    "@packages/store": "workspace:*",
-    "@packages/utils": "workspace:*",
-    "@packages/views": "workspace:*",
+    "@shared/apis": "workspace:*",
+    "@shared/components": "workspace:*",
+    "@shared/enums": "workspace:*",
+    "@shared/hooks": "workspace:*",
+    "@shared/router": "workspace:*",
+    "@shared/store": "workspace:*",
+    "@shared/utils": "workspace:*",
+    "@shared/views": "workspace:*",
     "@vitejs/plugin-vue": "^4.5.0"
   }
 }

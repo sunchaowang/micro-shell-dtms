@@ -1,5 +1,5 @@
 {
-  "name": "@packages/apis",
+  "name": "@shared/apis",
   "private": true,
   "type": "module",
   "version": "1.0.0",

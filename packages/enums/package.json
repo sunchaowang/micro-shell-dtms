@@ -1,5 +1,5 @@
 {
-  "name": "@packages/enums",
+  "name": "@shared/enums",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

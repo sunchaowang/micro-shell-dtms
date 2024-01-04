@@ -1,5 +1,5 @@
 {
-  "name": "@packages/hooks",
+  "name": "@shared/hooks",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
