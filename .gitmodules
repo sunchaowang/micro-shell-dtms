@@ -1,0 +1,3 @@
+[submodule "apps/dtms-core"]
+	path = apps/dtms-core
+	url = https://github.com/sunchaowang/micro-app-dtms-core.git
