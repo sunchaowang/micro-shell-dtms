@@ -21,10 +21,12 @@
     "vite": "^5.0.7"
   },
   "dependencies": {
+    "@micro-zoe/micro-app": "1.0.0-rc.3",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "@vitejs/plugin-vue": "^4.5.0",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "ant-design-vue": "^4.1.0",
     "dotenv": "^16.3.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",

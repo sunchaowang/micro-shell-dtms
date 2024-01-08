@@ -6,27 +6,19 @@
     }
   },
   "include": [
-    "apps/src/**/*.ts",
-    "shared/src/**/*.ts",
-    "apps/src/**/*.d.ts",
-    "shared/src/**/*.d.ts",
-    "apps/src/**/*.tsx",
-    "shared/src/**/*.tsx",
-    "apps/src/**/*.vue",
-    "shared/src/**/*.vue",
-    "apps/types/**/*.d.ts",
-    "shared/types/**/*.d.ts",
-    "apps/types/**/*.ts",
-    "shared/types/**/*.ts",
-    "apps/build/**/*.ts",
-    "shared/build/**/*.ts",
-    "apps/build/**/*.d.ts",
-    "shared/build/**/*.d.ts",
-    "apps/mock/**/*.ts",
-    "shared/mock/**/*.ts",
-    "apps/vite.config.ts",
+    "apps/*/src/**/*.ts",
+    "apps/*/src/**/*.d.ts",
+    "apps/*/src/**/*.tsx",
+    "apps/*/src/**/*.vue",
+    "apps/*/vite.config.ts",
+    "shared/**/*.ts",
+    "shared/**/*.d.ts",
+    "shared/**/*.tsx",
+    "shared/**/*.vue",
     "shared/vite.config.ts"
   ],
+  "types": ["vite/client", "jest"],
+  "typeRoots": ["./node_modules/@types/", "./shared/types"],
   "exclude": ["node_modules", "apps/tests/**/*.ts", "apps/src/**/*.test.ts", "apps/src/**/*.spec.ts", "shared/tests/**/*.ts", "shared/src/**/*.test.ts", "shared/src/**/*.spec.ts"
   ]
 }

@@ -1,4 +1,4 @@
-import { UserConfig, ConfigEnv, loadEnv } from 'vite';
+import { UserConfig, ConfigEnv } from 'vite';
 import { userConfig as baseUserConfig } from '../../vite.config.base';
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
