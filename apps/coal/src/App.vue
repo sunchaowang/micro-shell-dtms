@@ -1,7 +1,7 @@
 <script setup>
   import { onMounted } from 'vue';
   import { test } from 'shared/utils/src/index.js';
-  import { Name } from '@shared/components';
+  import { Name } from '@shared/components/src';
   import ContractManagements from '@shared/views/contract-managements/index.vue';
   import { useAppStore as usePackageAppStore } from '@shared/store/modules/app'; // workspace/packages/store/modules/app.ts
   import { useAppStore as useLocalAppStore } from './stores/modules/app'; // app/src/store/modules/app.ts
@@ -41,3 +41,4 @@
     filter: drop-shadow(0 0 2em #42b883aa);
   }
 </style>
+@shared/components/src

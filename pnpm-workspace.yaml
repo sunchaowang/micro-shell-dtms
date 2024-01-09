@@ -1,4 +1,5 @@
 packages:
-  - 'shared/*'
-  - 'apps/*'
+  - 'shared/*' # ui库、工具库等相关库
+  - 'apps/*' # 应用
+  - 'docs/*' # 组件库文档
   
