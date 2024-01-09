@@ -1,6 +1,6 @@
 <script setup>
   import { onMounted } from 'vue';
-  import { test } from '@shared/utils';
+  import { test } from 'shared/utils/src/index.js';
   import { Name } from '@shared/components';
   import ContractManagements from '@shared/views/contract-managements/index.vue';
   import { useAppStore as usePackageAppStore } from '@shared/store/modules/app'; // workspace/packages/store/modules/app.ts

@@ -24,7 +24,14 @@ export const loadCurrentEnv = (mode: string, rootPath?: string) => loadEnv(mode,
 
 export const userConfig: UserConfig = {
   plugins: [vue(), vueJs()],
-  resolve: {},
+  resolve: {
+    alias: [
+      {
+        find: '@shared',
+        replacement: pathResolve('shared'),
+      },
+    ],
+  },
   server: {
     host: true,
   },
