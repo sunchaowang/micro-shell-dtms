@@ -1,9 +1,9 @@
 [submodule "apps/dtms-core"]
 	path = apps/dtms-core
 	url = https://github.com/sunchaowang/micro-app-dtms-core.git
-[submodule "apps/app-car"]
-	path = apps/app-car
+[submodule "apps/module-car"]
+	path = apps/module-car
 	url = https://github.com/sunchaowang/micro-app-car.git
-[submodule "apps/app-coal"]
-	path = apps/app-coal
+[submodule "apps/module-coal"]
+	path = apps/module-coal
 	url = https://github.com/sunchaowang/micro-app-coal.git
