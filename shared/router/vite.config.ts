@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'lib/index.ts',
-      name: 'vue-use-web-storage',
+      name: 'router-lib',
       formats: ['es', 'cjs'],
       fileName: (format) => `index.${format}.js`,
     },

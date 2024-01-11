@@ -23,7 +23,7 @@
     "shared/*/lib/**/*.tsx",
     "shared/*/lib/**/*.vue",
     "shared/*/vite.config.ts",
-    "types/**/*.d.ts"
+    "vite.config.base.ts"
   ],
 
   "exclude": [
@@ -45,6 +45,9 @@
     },
     {
       "path": "./shared/router"
+    },
+    {
+      "path": "./apps/dtms-core"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import { Recordable, ViteEnv } from '@root/types/global';
+import { Recordable, ViteEnv } from '@shared/types';
 /**
  *
  * @param envConf

@@ -2,17 +2,23 @@
   "name": "@shared/router",
   "version": "1.0.0",
   "description": "",
-  "main": "./lib/index.js",
-  "types": "./dist/index.d.ts",
-  "module": "./dist/index.es.js",
+  "main": "lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "module": "dist/index.es.js",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
-    }
+    },
+    "./lib/index.js": {
+      "import": "./dist/lib/index.es.js",
+      "require": "./dist/lib/index.cjs.js"
+    },
+    "./lib/index.d.ts": "./dist/lib/index.d.ts",
+    "./lib": "./dist/lib/index.js"
   },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build --outDir dist --emptyOutDir"
   },
   "keywords": [],
   "author": "",

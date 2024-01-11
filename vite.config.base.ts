@@ -23,15 +23,16 @@ export const root = process.cwd();
 export const loadCurrentEnv = (mode: string, rootPath?: string) => loadEnv(mode, rootPath ?? root);
 
 export const userConfig: UserConfig = {
-  plugins: [vue(
-    {
+  plugins: [
+    vue({
       template: {
         compilerOptions: {
-          isCustomElement: tag => /^micro-app/.test(tag)
-        }
-      }
-    }
-  ), vueJs()],
+          isCustomElement: (tag) => /^micro-app/.test(tag),
+        },
+      },
+    }),
+    vueJs(),
+  ],
   resolve: {
     alias: [
       {

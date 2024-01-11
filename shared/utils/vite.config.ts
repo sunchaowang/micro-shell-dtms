@@ -8,17 +8,17 @@ export default () =>
     build: {
       lib: {
         entry: 'lib/index.ts',
-        name: 'vue-use-web-storage',
+        name: 'utils-lib',
         formats: ['es', 'cjs'],
         fileName: (format) => `index.${format}.js`,
       },
       rollupOptions: {
-        external: ['vue'],
-        output: {
-          globals: {
-            vue: 'Vue',
-          },
-        },
+        // external: ['vue'],
+        // output: {
+        //   globals: {
+        //     vue: 'Vue',
+        //   },
+        // },
       },
     },
     plugins: [

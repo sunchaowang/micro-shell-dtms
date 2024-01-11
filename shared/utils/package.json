@@ -15,18 +15,18 @@
   "scripts": {
     "build": "vite build --outDir dist --emptyOutDir"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.5",
-    "rollup": "^2.79.1",
-    "tslib": "^2.6.2",
     "vite-plugin-dts": "^3.7.0"
+  },
+  "peerDependencies": {
+    "@shared/types": "workspace:*"
   }
 }
