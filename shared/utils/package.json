@@ -3,32 +3,30 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "./src/index.ts",
-  "types": "./dist/index.d.ts",
-  "module": "./dist/index.esm.js",
+  "main": "./lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "module": "./dist/index.es.js",
   "exports": {
     ".": {
-      "import": "./dist/index.esm.js",
+      "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     }
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "vite build --outDir dist --emptyOutDir"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.5",
-    "@types/node": "^20.10.4",
     "rollup": "^2.79.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
-  },
-  "files": [
-    "dist/**/*"
-  ],
-  "dependencies": {
-    "vue": "^3.4.6"
+    "vite-plugin-dts": "^3.7.0"
   }
 }

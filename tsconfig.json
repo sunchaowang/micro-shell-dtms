@@ -1,24 +1,50 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "baseUrl": ".",
     "paths": {
-      "@shared/*": ["shared/*"],
+      "@shared/*": ["./shared/*"],
+      "@apps/*": ["./apps/*"],
+      "@root/*": ["./*"]
     }
   },
+
   "include": [
-    "apps/*/src/**/*.ts",
-    "apps/*/src/**/*.d.ts",
-    "apps/*/src/**/*.tsx",
-    "apps/*/src/**/*.vue",
-    "apps/*/vite.config.ts",
-    "shared/**/*.ts",
-    "shared/**/*.d.ts",
-    "shared/**/*.tsx",
-    "shared/**/*.vue",
-    "shared/vite.config.ts"
+    "apps/**/*.ts",
+    "apps/**/*.d.ts",
+    "apps/**/*.tsx",
+    "apps//**/*.vue",
+    "apps/**/vite.config.ts",
+    "shared/*/lib/**/*.ts",
+    "shared/*/lib/**/*.d.ts",
+    "shared/*/lib/**/*.tsx",
+    "shared/*/lib/**/*.vue",
+    "shared/*/vite.config.ts",
+    "types/**/*.d.ts"
   ],
-  "types": ["vite/client", "jest"],
-  "typeRoots": ["./node_modules/@types/", "./shared/types"],
-  "exclude": ["node_modules", "apps/tests/**/*.ts", "apps/src/**/*.test.ts", "apps/src/**/*.spec.ts", "shared/tests/**/*.ts", "shared/src/**/*.test.ts", "shared/src/**/*.spec.ts"
+
+  "exclude": [
+    "node_modules",
+    "apps/*/node_modules",
+    "apps/*/src/**/*.test.ts", 
+    "apps/*/src/**/*.spec.ts", 
+    "apps/*/src/**/*.test.tsx",
+    "apps/*/src/**/dist/*.d.ts",
+    "shared/*/node_modules",
+    "shared/*/tests/**/*.ts",
+    "shared/*/lib/**/*.test.ts",
+    "shared/*/lib/**/*.spec.ts",
+    "shared/*/lib/**/dist/*.d.ts",
+  ],
+  "references": [
+    {
+      "path": "./shared/utils"
+    },
+    {
+      "path": "./shared/router"
+    }
   ]
 }

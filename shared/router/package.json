@@ -2,14 +2,25 @@
   "name": "@shared/router",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^3.7.0"
   }
 }
