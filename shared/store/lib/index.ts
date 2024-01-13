@@ -1,5 +1,7 @@
+export * from './modules';
+
 import { createPinia } from 'pinia';
 
 export const store = createPinia();
 
-export default createPinia;
+export * from 'pinia';

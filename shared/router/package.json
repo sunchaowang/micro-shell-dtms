@@ -18,7 +18,8 @@
     "./lib": "./dist/lib/index.js"
   },
   "scripts": {
-    "build": "vite build --outDir dist --emptyOutDir"
+    "dev": "vite build --watch",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",

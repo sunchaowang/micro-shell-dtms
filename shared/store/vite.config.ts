@@ -12,7 +12,9 @@ export default () => {
         entry: 'lib/index.ts',
         name: pkg.name,
         formats: ['es', 'cjs'],
-        fileName: (format) => `index.${format}.js`,
+        fileName: (format) => {
+          return `index.${format}.js`;
+        },
       },
       rollupOptions: {
         external: ['vue'],

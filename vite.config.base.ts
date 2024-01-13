@@ -35,9 +35,15 @@ export const userConfig: UserConfig = {
   ],
   resolve: {
     alias: [
+      // @shared
       {
-        find: '@shared',
-        replacement: pathResolve('shared'),
+        find: '@shared/',
+        replacement: pathResolve('shared/'),
+      },
+      // @root
+      {
+        find: '@root/',
+        replacement: pathResolve('./'),
       },
     ],
   },

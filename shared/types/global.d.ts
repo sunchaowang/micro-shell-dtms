@@ -6,17 +6,10 @@ export interface ViteEnv {
   BASE_URL: string;
   VITE_APP_PORT: number;
   VITE_PUBLIC_PATH: string;
+  VITE_APP_NAME: string;
   VITE_PROXY: [string, string][];
 }
 // }
-export type Recordable<T = any> = Record<string, T>;
-
-export interface ViteEnv {
-  BASE_URL: string;
-  VITE_APP_PORT: number;
-  VITE_PUBLIC_PATH: string;
-  VITE_PROXY: [string, string][];
-}
 
 declare const __APP_INFO__: {
   pkg: {

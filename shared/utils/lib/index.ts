@@ -1,7 +1,8 @@
 import { Recordable, ViteEnv } from '@shared/types';
 /**
- *
- * @param envConf
+ * 读取环境变量
+ * @param envConf 环境变量配置
+ * @returns 环境变量
  */
 export function wrapperEnv(envConf: Recordable): ViteEnv {
   const ret: any = {};
@@ -30,6 +31,10 @@ export function wrapperEnv(envConf: Recordable): ViteEnv {
   return ret;
 }
 
+// 读取根路径
+export const rootPath = process.cwd();
+
+// 测试函数
 export function test() {
   console.log('test');
 }

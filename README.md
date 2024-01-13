@@ -8,13 +8,23 @@
   - [micro-monorepo](https://github.com/sunchaowang/micro-monorepo)
 
 ## 项目结构
-- 本项目主要包含三个仓库，分别是：
 - [micro-monorepo](https://github.com/sunchaowang/micro-monorepo)
-  - apps
-    - [dtms-web](https://github.com/sunchaowang/micro-monorepo)
-    - [module-car](https://github.com/sunchaowang/micro-monorepo)
-    - [module-coal](https://github.com/sunchaowang/micro-monorepo)
-  - shared
+  - wwws `Web端所有应用`
+    - shells `壳应用`
+        - [shell-dtms](https://github.com/sunchaowang/micro-monorepo) `dtms-web`
+        - [shell-[dtms2]]()
+    - subapps `行业应用, 业务应用, 可在壳应用中配置引用`
+        - [app-car](https://github.com/sunchaowang/micro-monorepo) `汽车`
+        - [app-coal](https://github.com/sunchaowang/micro-monorepo) `煤炭`
+        - [app-steel]() `钢材`
+        - [app-pulp]() `纸浆`
+        - [ddc-web]() `大屏后台`
+        - [dams-web]() ``
+        - `票据项目`
+        - `审批项目` 
+        - ...
+    
+  - shared `共享库`
     - [apis]
     - [assets]
     - [components]
@@ -25,6 +35,7 @@
     - [store]
     - [types]
     - [utils]
+    - [business]
 
 ## 项目初始化
 ### 拉取代码
