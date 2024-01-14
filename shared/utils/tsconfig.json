@@ -1,22 +1,19 @@
 {
-  "extends": [
-    "../../tsconfig.json"
-  ],
+  "extends": ["../../tsconfig.json"],
   "compilerOptions": {
     "baseUrl": ".",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Bundler",
     "paths": {
+      "@/*": ["./lib/*"],
       "@root/*": ["../../*"]
     }
   },
-  //  "include": [
-//    "**/*.ts",
-//    "**/*.tsx",
-//    "**/*.d.ts"
-//  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts",
-    "**/*.spec.tsx"
+  "include": [
+    "lib/**/*.ts",
+    "lib/**/*.d.ts",
+    "lib/**/*.tsx",
+    "lib/**/*.vue",
+    "vite.config.ts"
   ],
+  "exclude": ["node_modules/"]
 }

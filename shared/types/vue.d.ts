@@ -1,10 +1,4 @@
-import type {
-  VNode,
-  VNodeChild,
-  ComponentPublicInstance,
-  FunctionalComponent,
-  PropType as VuePropType,
-} from 'vue';
+import type { VNode, VNodeChild, PropType as VuePropType } from 'vue';
 
 declare global {
   // vue

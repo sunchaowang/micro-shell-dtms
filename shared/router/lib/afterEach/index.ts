@@ -5,7 +5,5 @@ import type { Router } from 'vue-router';
  * @param router
  */
 export const useAfterEach = (router: Router) => {
-  router.afterEach((to, from) => {
-    console.log('router.afterEach', to, from);
-  });
+  router.afterEach((to, from) => {});
 };
