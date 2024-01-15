@@ -13,3 +13,5 @@ build
 
 # 忽略所有 .env*.local 文件
 .env*.local
+nginx
+Dockerfile

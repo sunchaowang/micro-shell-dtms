@@ -1,6 +1,6 @@
 {
-  "name": "@shared/utils",
-  "version": "1.0.0",
+  "name": "@shared/utils1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -13,9 +13,9 @@
       "types": "./dist/lib/index.d.ts"
     },
     "./lib/env": {
-        "import": "./dist/index.js",
-        "require": "./dist/index.cjs.js",
-        "types": "./dist/lib/env.d.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/lib/env.d.ts"
     }
   },
   "scripts": {
@@ -24,8 +24,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  },
-  "devDependencies": {
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "@shared/types": "workspace: *"
   }
 }

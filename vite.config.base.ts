@@ -22,7 +22,7 @@ export const root = process.cwd();
  */
 export const loadCurrentEnv = (mode: string, rootPath?: string) => loadEnv(mode, rootPath ?? root);
 
-export const userConfig: UserConfig = {
+export const userConfig = {
   plugins: [
     vue({
       template: {
@@ -55,6 +55,11 @@ export const userConfig: UserConfig = {
       less: {
         javascriptEnabled: true,
       },
+    },
+  },
+  rollupOptions: {
+    output: {
+      comment: false,
     },
   },
 };

@@ -27,7 +27,7 @@
   - shared `共享库`
     - [apis]
     - [assets]
-    - [components]
+    - [components] 
     - [design]
     - [enums]
     - [hooks]
@@ -48,6 +48,10 @@ git clone https://github.com/sunchaowang/micro-monorepo
 git submodule init
 git submodule update --update --recursive
 ```
+- 如果需要添加子仓库，使用如下命令：
+```bash
+# git submodule add subapp-git-url subapps/subapp-name # 添加子仓库
+```
 - 需要安装依赖，使用如下命令：
 ```bash
 pnpm install
@@ -58,6 +62,6 @@ pnpm install
 # 启动所有项目
 pnpm run dev:all
 
-# 启动单个项目 TODO
+# 启动单个项目
 # pnpm run dev:apps:dtms-web
 ```
