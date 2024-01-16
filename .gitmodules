@@ -13,3 +13,6 @@
 [submodule "apps/app-coal"]
 	path = apps/app-coal
 	url = https://github.com/sunchaowang/micro-app-coal.git
+[submodule "libs"]
+	path = libs
+	url = https://github.com/sunchaowang/micro-libs-core.git
