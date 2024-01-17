@@ -1,12 +1,3 @@
-[submodule "wwws/subapps/app-car"]
-	path = wwws/subapps/app-car
-	url = https://github.com/sunchaowang/micro-app-car.git
-[submodule "wwws/subapps/app-coal"]
-	path = wwws/subapps/app-coal
-	url = https://github.com/sunchaowang/micro-app-coal.git
-[submodule "wwws/shells/shell-dtms"]
-	path = wwws/shells/shell-dtms
-	url = https://github.com/sunchaowang/micro-app-dtms-core.git
 [submodule "apps/app-car"]
 	path = apps/app-car
 	url = https://github.com/sunchaowang/micro-app-car.git

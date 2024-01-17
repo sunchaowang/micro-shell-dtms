@@ -6,48 +6,27 @@
     "declarationDir": "./types",
     "baseUrl": ".",
     "paths": {
-      "@shared/*": ["./shared/*"],
-      "@apps/*": ["./apps/*"],
-      "@root/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
 
   "include": [
-    "apps/**/*.ts",
-    "apps/**/*.d.ts",
-    "apps/**/*.tsx",
-    "apps//**/*.vue",
-    "apps/**/vite.config.ts",
-    "shared/*/lib/**/*.ts",
-    "shared/*/lib/**/*.d.ts",
-    "shared/*/lib/**/*.tsx",
-    "shared/*/lib/**/*.vue",
-    "shared/*/vite.config.ts",
-    "vite.config.base.ts"
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src//**/*.vue",
+    // "src/**/vite.config.ts",
+    "vite.config.ts"
   ],
 
   "exclude": [
     "node_modules",
     "apps/*/node_modules",
-    "apps/*/src/**/*.test.ts", 
-    "apps/*/src/**/*.spec.ts", 
+    "apps/*/src/**/*.test.ts",
+    "apps/*/src/**/*.spec.ts",
     "apps/*/src/**/*.test.tsx",
-    "apps/*/src/**/dist/*.d.ts",
-    "shared/*/node_modules",
-    "shared/*/tests/**/*.ts",
-    "shared/*/lib/**/*.test.ts",
-    "shared/*/lib/**/*.spec.ts",
-    "shared/*/lib/**/dist/*.d.ts",
-  ],
-  "references": [
-    {
-      "path": "./shared/utils"
-    },
-    {
-      "path": "./shared/router"
-    },
-    {
-      "path": "./apps/dtms-core"
-    }
+    "apps/*/src/**/dist/*.d.ts"
   ]
 }
