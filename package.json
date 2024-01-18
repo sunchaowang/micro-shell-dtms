@@ -18,7 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@ant-design/icons-vue": "^7.0.1",
-    "@libs/core": "workspace:*",
+    "block-libs": "latest",
     "@types/jest": "^29.5.11",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.10.4",

@@ -1,10 +1,11 @@
 import { loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJs from '@vitejs/plugin-vue-jsx';
-import { resolve } from 'path';
-import { ViteEnv } from '@/libs/types';
+import { resolve, join } from 'path';
+import { ViteEnv } from '@libs-core/types';
 import Components from 'unplugin-vue-components/vite';
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
+import * as process from 'process';
 
 /**
  * 项目根目录下的相对路径
@@ -46,13 +47,12 @@ export default ({ command, mode }) => {
         // @shared
         {
           find: '@/',
-          replacement: pathResolve('src/'),
+          replacement: pathResolve('src') + '/',
         },
-        // @root
-        {
-          find: '@root/',
-          replacement: pathResolve('./'),
-        },
+        // {
+        //   find: '@libs-core/',
+        //   replacement: join(process.cwd(), 'libs') + '/',
+        // },
       ],
     },
     server: {
