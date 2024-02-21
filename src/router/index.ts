@@ -1,31 +1,52 @@
 // import { router as _router } from '@libs/core';
 // const { createWebHistory, getRouter, useBeforeEach, useAfterEach } = _router;
-import { createWebHistory, getRouter, useBeforeEach, useAfterEach } from 'block-libs/router';
+import Layout from '@/components/Layout/index.vue';
+import {
+  getRouter,
+  useBeforeEach,
+  useAfterEach,
+  createWebHashHistory,
+} from 'block-libs/dist/router';
 
-export const router = getRouter({
-  history: createWebHistory(),
+export const _router = getRouter({
+  history: createWebHashHistory(),
   routes: [
     {
+      path: '/login',
+      name: 'login',
+      component: () => import('@/views/login.vue'),
+    },
+    {
       path: '/',
-      name: '_home',
-      redirect() {
-        return {
-          path: '/home',
-        };
-      },
-    },
-    {
-      path: '/home',
-      name: 'home',
-      component: () => import('@/views/home.vue'),
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('@/views/about.vue'),
+      name: '_system',
+      component: Layout,
+      children: [
+        {
+          path: '/',
+          name: '_home',
+          redirect() {
+            return '/home';
+          },
+        },
+        {
+          path: 'home',
+          name: 'home',
+          component: () => import('@/views/systems/home.vue'),
+        },
+        {
+          path: 'about',
+          name: 'about',
+          component: () => import('@/views/systems/about.vue'),
+        },
+        {
+          path: '/module/:path*',
+          name: 'micro-app',
+          component: () => import('@/views/systems/micro-apps/index.vue'),
+        },
+      ],
     },
   ],
 });
 
-useBeforeEach(router);
-useAfterEach(router);
+useBeforeEach(_router);
+useAfterEach(_router);
