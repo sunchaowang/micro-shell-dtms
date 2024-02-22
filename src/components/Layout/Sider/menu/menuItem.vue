@@ -19,7 +19,7 @@
 </script>
 <template>
   <template v-if="props.menuItem.children">
-    <a-sub-menu v-if="props.menuItem.children" :key="props.menuItem.path">
+    <a-sub-menu :key="props.menuItem.path">
       <template #icon>
         <Component :is="props.menuItem.icon" v-if="props.menuItem.icon" />
       </template>

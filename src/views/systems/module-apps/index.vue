@@ -17,7 +17,7 @@
   import { useRouter, useRoute } from 'block-libs/dist/router';
   import { computed, onMounted, watch } from 'vue';
   import microApp from '@micro-zoe/micro-app';
-  import { getAppConfig } from './configs/app';
+  import { getAppConfig } from '@/utils/micro/configs/app';
   const router = useRouter();
   const route = useRoute();
 
@@ -26,7 +26,7 @@
     // getAppConfig();
   });
 
-  const app = getAppConfig(router);
+  const app = getAppConfig();
 
   // currentMicroApp 的配置
   const currentMicroApp = computed(() => {

@@ -3,9 +3,9 @@
   import { useRouter } from 'block-libs/dist/router';
 
   const router = useRouter();
-  function login() {
+  function login(code?: string) {
     console.log('login');
-    sessionStorage.setItem('token', Date.now().toString());
+    sessionStorage.setItem('token', code ?? 'guest');
     router.push('/');
   }
 
@@ -16,10 +16,24 @@
 
 <template>
   <h1> Login </h1>
-  <a-button type="primary" @click="login">
-    <a-icon type="user" />
-    Login
-  </a-button>
+  <a-space :size="20">
+    <a-button type="primary" @click="login('guest')">
+      <a-icon type="user" />
+      Login
+    </a-button>
+    <a-button type="primary" @click="login('car')">
+      <a-icon type="user" />
+      Login Car
+    </a-button>
+    <a-button type="primary" @click="login('coal')">
+      <a-icon type="user" />
+      Login Coal
+    </a-button>
+    <a-button type="primary" @click="login(['car', 'coal'].join(','))">
+      <a-icon type="user" />
+      Login Admin
+    </a-button>
+  </a-space>
 </template>
 
 <style scoped lang="less"></style>

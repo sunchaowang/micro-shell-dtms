@@ -40,8 +40,8 @@ export const _router = getRouter({
         },
         {
           path: '/module/:path*',
-          name: 'micro-app',
-          component: () => import('@/views/systems/micro-apps/index.vue'),
+          name: 'module-app',
+          component: () => import('@/views/systems/module-apps/index.vue'),
         },
       ],
     },

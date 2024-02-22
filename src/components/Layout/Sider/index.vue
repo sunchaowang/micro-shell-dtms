@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { onMounted, ref } from 'vue';
-  import Menu from './menu/index.vue';
+  import Menu from './Menu/index.vue';
   import { useMenuSetting } from 'block-libs/dist/hooks/setting/useMenuSetting';
 
   const sideRef = ref();
