@@ -41,12 +41,12 @@
 ### 拉取代码
 - 本项目使用git submodule管理子仓库，所以需要使用如下命令拉取代码：
 ```bash
-git clone https://github.com/sunchaowang/micro-monorepo
+git clone https://github.com/sunchaowang/micro-shell-dtms
 ```
 - 需要初始化子仓库，使用如下命令：
 ```bash
 git submodule init
-git submodule update --update --recursive
+git submodule update --recursive
 ```
 - 如果需要添加子仓库，使用如下命令：
 ```bash
