@@ -46,7 +46,7 @@ git clone https://github.com/sunchaowang/micro-monorepo
 - 需要初始化子仓库，使用如下命令：
 ```bash
 git submodule init
-git submodule update --update --recursive
+git submodule update --recursive
 ```
 - 如果需要添加子仓库，使用如下命令：
 ```bash
