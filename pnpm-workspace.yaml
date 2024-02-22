@@ -1,4 +1,4 @@
 packages:
   - 'libs/**' # ui库、工具库等相关库
   - 'docs/*' # 组件库文档
-  - 'apps/**' # 应用
+  - 'apps/app-car' # 应用
