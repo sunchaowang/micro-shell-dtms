@@ -23,7 +23,7 @@
 
   onMounted(() => {
     console.log('micro-app mounted');
-    // getAppConfig();
+    // getAppConfig(); sun.rise
   });
 
   const app = getAppConfig();

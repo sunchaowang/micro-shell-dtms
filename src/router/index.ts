@@ -6,9 +6,10 @@ import {
   useBeforeEach,
   useAfterEach,
   createWebHashHistory,
+  Router,
 } from 'block-libs/dist/router';
 
-export const _router = getRouter({
+export const _router: Router = getRouter({
   history: createWebHashHistory(),
   routes: [
     {
